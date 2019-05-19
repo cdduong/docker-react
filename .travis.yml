@@ -6,4 +6,4 @@ before_install:
   - docker build -t cdduong/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run cdduong/docker-react npm run test -- --coverage
+  - docker run -ti cdduong/docker-react npm run test -- --coverage
